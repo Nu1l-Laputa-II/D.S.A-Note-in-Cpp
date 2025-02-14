@@ -8,6 +8,6 @@ void iota(T a[], int n, T value)
 {
     for (int i = 0; i < n; i++)
     {
-        a[i] = value++;
+        a[i] = value + i;
     }
 }
