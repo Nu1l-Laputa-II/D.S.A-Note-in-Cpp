@@ -6,6 +6,11 @@
 template<class T>
 int count(T a[], int n, T value)
 {
+    if (n < 1)  // 数组长度必须大于0
+    {
+        throw "Array length must be greater than 0.";
+    }
+
     int count = 0;
     for (int i = 0; i < n; i++)
     {
